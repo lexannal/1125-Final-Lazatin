@@ -5,7 +5,7 @@
 
 header {
   background-color: rgb(231, 116, 49);
-  color: #fff;
+  color: white;
   padding: 20px 0;
   text-align: center;
   font-family: "silver-streak-variable", sans-serif;
@@ -13,15 +13,15 @@ header {
 }
 
 nav {
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 1px;
   padding: 10px 0;
 }
 nav a {
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   padding: 0 20px;
 }
@@ -41,7 +41,7 @@ nav a:hover {
   text-align: left;
   width: 30%;
   vertical-align: top;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 5px;
   padding: 20px;
   box-sizing: border-box;
@@ -61,74 +61,74 @@ nav a:hover {
   cursor: pointer;
 }
 
-form {
+#contact h2 {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2em;
+}
+#contact p {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+}
+#contact form {
   max-width: 600px;
   margin: auto;
-  background: #fff;
+  background: rgba(51, 51, 51, 0.6);
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-h2 {
-  text-align: center;
+#contact form .form-group {
+  margin-bottom: 20px;
 }
-
-label {
+#contact form .form-group label {
   font-weight: bold;
+  color: rgb(255, 255, 255);
 }
-
-input[type=text],
-input[type=email],
-textarea {
+#contact form .form-group .form-group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#contact form .form-group .form-group label,
+#contact form .form-group .form-group input,
+#contact form .form-group .form-group textarea {
+  float: left;
+  width: 100%;
+}
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea {
   width: 100%;
   padding: 10px;
   margin-top: 6px;
   margin-bottom: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
+#contact input[type=submit] {
+  background-color: rgb(181, 48, 43);
+  color: rgb(255, 255, 255);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
+#contact input[type=submit] input[type=submit]:hover {
+  background-color: rgb(181, 48, 43);
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-group::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.form-group label,
-.form-group input,
-.form-group textarea {
-  float: left;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  form {
-    max-width: 800px;
-  }
-}
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 20px 0;
   position: fixed;
