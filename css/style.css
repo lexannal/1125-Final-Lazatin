@@ -4,7 +4,7 @@
 }
 
 header {
-  background-color: rgb(231, 116, 49);
+  background-image: linear-gradient(rgb(231, 116, 49), rgb(181, 48, 43));
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -16,6 +16,7 @@ nav {
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
   text-align: center;
+  font-size: 1.2em;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 1px;
   padding: 10px 0;
@@ -48,6 +49,7 @@ nav a:hover {
 }
 #products .product h2 {
   font-size: 1.8em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 #products .product p {
   font-size: 1.1em;
@@ -59,6 +61,25 @@ nav a:hover {
 }
 #products .product img:hover {
   cursor: pointer;
+}
+
+#about {
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+#about h2 {
+  font-family: "silver-streak-variable", sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+#about h3 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 2em;
+}
+#about p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
 }
 
 #contact h2 {
@@ -76,7 +97,7 @@ nav a:hover {
   font-size: 1.25em;
 }
 #contact form {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
   background: rgba(51, 51, 51, 0.6);
   padding: 30px;
@@ -129,9 +150,17 @@ nav a:hover {
 footer {
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+footer img {
+  width: 50px;
+  margin: 0px 0px 0px 20px;
+}
+footer p {
+  margin: 20px 20px 0px 0px;
 }/*# sourceMappingURL=style.css.map */
