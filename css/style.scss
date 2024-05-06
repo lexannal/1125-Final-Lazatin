@@ -4,18 +4,23 @@
 }
 //colors
 // red: rgb(181,48,43);
-// orange: (231,116,49);
+// orange: rgb(231,116,49);
 // gray: rgb(51, 51, 51)
-// light blue: (85,163,147);
-// dark blue: (75,108,87);
+// light blue: rgb(85,163,147);
+// dark blue: rgb(75,108,87);
 
 //font
 // font-family: "silver-streak-variable",sans-serif;
 // font-variation-settings: 'wdth' 100, 'wght' 400;
 
+body {
+  background-color: black;
+  color: white;
+}
+
 /////header start
 header {
-  background-image: linear-gradient(rgb(231,116,49), rgb(181,48,43));
+  background-image: linear-gradient(rgb(231, 116, 49), rgb(181, 48, 43));
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -23,7 +28,7 @@ header {
   font-size: 2em;
 }
 nav {
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(181,48,43,0.8);
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 1.2em;
@@ -65,7 +70,7 @@ nav {
     box-sizing: border-box;
     h2 {
       font-size: 1.8em;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     }
     p {
       font-size: 1.1em;
@@ -84,46 +89,102 @@ nav {
 /////product page end
 
 /////about page start
-#about{
+#about {
+  height: 300%;
   justify-content: center;
   align-items: center;
-  margin: 25px;
+  margin: 15px;
+  #title{
+    height: 200px;
   h2 {
-    font-family: "silver-streak-variable",sans-serif;
+    font-family: "silver-streak-variable", sans-serif;
     font-size: 3em;
     text-align: center;
+    background: linear-gradient(to right, rgb(231,116,49), rgb(181,48,43));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding-top: 115px;
+    
   }
-  h3{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2em;
+}
+  h3 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2.2em;
+    padding: 10px;
   }
   p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
+    padding: 10px;
   }
+  #intro {
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 0px 0px 20px 0px;
+    font-size: 1.5em;
+  }
+  #about-content {
+    margin: 0px 0px 100px 0px;
+    .about-para1{
+      width: 80%;
+      margin: auto;
+      padding: 100px 0px 100px 0px;
+      h3{
+        text-align: center;
+      }
+    }
+    .about-para2{
+      float: left;
+      width: 33.33%;
+      padding: 20px;
+    }
+    #about-content::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+
+  #quote {
+    font-family: "silver-streak-variable", sans-serif;
+    font-size: 3em;
+    text-align: center;
+    background: linear-gradient(to right, rgb(231,116,49), rgb(181,48,43));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    padding: 100px 0px 150px 0px;
+  }
+  
 }
+
+
 /////about page end
 
 /////contact page start
 #contact {
-    h2 {
-      display: flex;
-      justify-content: center;
-      margin: 30px;
-      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-      font-size: 2em;
-    }
-    p {
-      margin: 30px;
-      display: flex;
-      justify-content: center;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.25em;
-    }
+  padding-bottom: 150px;
+  h2 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 2em;
+  }
+  p {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25em;
+    padding: 10px 0px 40px 0px;
+  }
   form {
     max-width: 400px;
     margin: auto;
-    background: rgba(51, 51, 51, 0.6);
+    //background: rgba(51, 51, 51, 0.6);
+    background-image: linear-gradient(rgb(181,48,43),rgb(231,116,49));
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
@@ -175,7 +236,7 @@ nav {
 
 /////footer start
 footer {
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(0, 0, 0,0.8);
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -190,5 +251,5 @@ footer {
   p {
     margin: 20px 20px 0px 0px;
   }
-  }
+}
 /////footer end
