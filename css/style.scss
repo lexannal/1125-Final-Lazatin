@@ -28,7 +28,7 @@ header {
   font-size: 2em;
 }
 nav {
-  background-color: rgba(181,48,43,0.8);
+  background-color: rgba(181, 48, 43, 0.8);
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 1.2em;
@@ -49,11 +49,50 @@ nav {
 /////header end
 
 /////home page start
-
+#home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/verzecan-display.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  #image-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "silver-streak-variable", sans-serif;
+  h1 {
+    font-size: 5em;
+    text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(
+    to right,
+    rgb(231, 116, 49),
+    rgb(181, 48, 43)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;;
+  }
+  h2 {
+    font-size: 4em;
+    text-shadow: 3px 3px 0 rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(
+    to right,
+    rgb(231, 116, 49),
+    rgb(181, 48, 43)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;;
+  }
+  }
+}
 ///// home page end
 
 /////product page start
 #products {
+  margin: 100px 0px 200px 0px;
   padding: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +103,11 @@ nav {
     text-align: left;
     width: 30%;
     vertical-align: top;
-    border: 1px solid rgb(204, 204, 204);
+    border: 1px solid rgb(181, 48, 43);
+    background-image: linear-gradient(
+      rgba(181, 48, 43, 0.8),
+      rgba(0, 0, 0, 0.8)
+    );
     border-radius: 5px;
     padding: 20px;
     box-sizing: border-box;
@@ -104,38 +147,41 @@ nav {
     font-size: 1.2em;
     padding: 10px;
   }
-  #title{
+  #title {
     height: 200px;
     width: 800px;
     position: relative;
     margin: auto;
-  h2 {
-    font-family: "silver-streak-variable", sans-serif;
-    font-size: 3em;
-    text-align: center;
-    background: linear-gradient(to right, rgb(231,116,49), rgb(181,48,43));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    padding-top: 115px;
-    
+    h2 {
+      font-family: "silver-streak-variable", sans-serif;
+      font-size: 3em;
+      text-align: center;
+      background: linear-gradient(
+        to right,
+        rgb(231, 116, 49),
+        rgb(181, 48, 43)
+      );
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      padding-top: 115px;
+    }
+    h2::before {
+      content: "";
+      width: 16em;
+      border-bottom: solid 4px rgb(231, 116, 49);
+      position: absolute;
+      top: 70px;
+      left: -300px;
+    }
+    h2::after {
+      content: "";
+      width: 16em;
+      border-bottom: solid 4px rgb(181, 48, 43);
+      position: absolute;
+      right: -300px;
+      top: 190px;
+    }
   }
-  h2::before {
-    content: "";
-    width: 16em;
-    border-bottom: solid 4px rgb(231,116,49);
-    position: absolute;
-    top: 70px;
-    left: -300px;
-  }
-  h2::after {
-    content: "";
-    width: 16em;
-    border-bottom: solid 4px rgb(181,48,43);
-    position: absolute;
-    right: -300px;
-    top: 190px;
-  }
-}
   #intro {
     width: 800px;
     text-align: center;
@@ -145,17 +191,17 @@ nav {
   }
   #about-content {
     margin: 0px 0px 100px 0px;
-    .about-para1{
+    .about-para1 {
       width: 85%;
       margin: auto;
       padding: 100px 0px 100px 0px;
-      h3{
-        border-top: solid 4px rgb(181,48,43);
+      h3 {
+        border-top: solid 4px rgb(181, 48, 43);
         text-align: center;
         padding-top: 50px;
-      } 
+      }
     }
-    .about-para2{
+    .about-para2 {
       float: left;
       width: 33.33%;
       padding: 20px;
@@ -166,20 +212,16 @@ nav {
       clear: both;
     }
   }
-  
-
   #quote {
     font-family: "silver-streak-variable", sans-serif;
     font-size: 3em;
     text-align: center;
-    background: linear-gradient(to right, rgb(231,116,49), rgb(181,48,43));
+    background: linear-gradient(to right, rgb(231, 116, 49), rgb(181, 48, 43));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     padding: 100px 0px 150px 0px;
   }
-  
 }
-
 
 /////about page end
 
@@ -205,7 +247,10 @@ nav {
     max-width: 400px;
     margin: auto;
     //background: rgba(51, 51, 51, 0.6);
-    background-image: linear-gradient(rgb(181,48,43),rgb(231,116,49));
+    background-image: linear-gradient(
+      rgba(181, 48, 43, 0.8),
+      rgba(231, 116, 49, 0.8)
+    );
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
@@ -257,7 +302,7 @@ nav {
 
 /////footer start
 footer {
-  background-color: rgba(0, 0, 0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
